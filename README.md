@@ -1,6 +1,10 @@
 # Audio-Synced Transcription Player
 
+![Landing Image](https://res.cloudinary.com/suv4o/image/upload/q_auto,f_auto,w_850,e_sharpen:100/v1763271005/blog/make-your-audio-play-with-real-time-transcript-highlighting/make-your-audio-play-with-real-time-transcript-highlighting_hgmjsl)
+
 A simple, lightweight audio player with real-time transcript synchronisation. Watch the text highlight as the audio plays, just like YouTube captions!
+
+📖 **[Read the full tutorial](https://www.trpkovski.com/2025/11/16/make-your-audio-play-with-real-time-transcript-highlighting)** - Step-by-step guide on how this project was built.
 
 ## Quick Start
 
@@ -119,3 +123,5 @@ In `styles.css`, modify the transcript max-height:
 4. **Highlight**: Matching segments get the `active` class
 5. **Scroll**: Active segments scroll into view automatically
 6. **Click**: Clicking a segment sets audio to that timestamp
+
+For a detailed explanation of the implementation, check out the blog article: **[Make Your Audio Play with Real-Time Transcript Highlighting](https://www.trpkovski.com/2025/11/16/make-your-audio-play-with-real-time-transcript-highlighting)**
