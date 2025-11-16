@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: #efe8df;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(23, 51, 83, 0.1);
+    padding: 3rem;
+    border: 1px solid #bfd9db;
+}
+
+h1 {
+    color: #173353;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    color: #37506e;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+audio {
+    width: 100%;
+    margin-bottom: 2.5rem;
+    border-radius: 12px;
+    outline: none;
+    height: 54px;
+}
+
+.transcript-wrapper {
+    background: #d8d7c1;
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid #bfd9db;
+}
+
+.transcript {
+    font-size: 1.2em;
+    line-height: 1.8;
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    color: #173353;
+}
+
+.segment {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    border-left: 3px solid transparent;
+    background: transparent;
+}
+
+.segment:hover {
+    background: rgba(191, 217, 219, 0.3);
+    border-left-color: #40979d;
+    transform: translateX(4px);
+}
+
+.segment.active {
+    color: #173353;
+    font-weight: 600;
+    background: rgba(191, 217, 219, 0.5);
+    border-left-color: #ee5f53;
+    transform: translateX(8px);
+    box-shadow: 0 2px 8px rgba(238, 95, 83, 0.15);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Scrollbar styling */
+.transcript::-webkit-scrollbar {
+    width: 10px;
+}
+
+.transcript::-webkit-scrollbar-track {
+    background: #d8d7c1;
+    border-radius: 10px;
+    margin: 4px;
+}
+
+.transcript::-webkit-scrollbar-thumb {
+    background: #40979d;
+    border-radius: 10px;
+    border: 2px solid #d8d7c1;
+}
+
+.transcript::-webkit-scrollbar-thumb:hover {
+    background: #37506e;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    .container {
+        padding: 2rem 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .transcript {
+        font-size: 1.1rem;
+        max-height: 350px;
+        padding: 1rem;
+    }
+
+    .segment {
+        padding: 0.6rem 1rem;
+        margin-bottom: 0.75rem;
+    }
+}
